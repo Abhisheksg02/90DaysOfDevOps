@@ -1,18 +1,18 @@
-Following are the learning from Day -02 of 90 Days of Devops .
-Linux System Architeture consist of 4 layers 
-layer 1- hardware : Physical parts of a computer such as CPU Monitor Mouse keyboard hard disk.
-layer-2 Kernel : Kernel is a computer program and is the central core part (heart) of an operating system (linux) It manages the opeations of the computer and the hardware most notably memory & CPU time 
-layer-3 Shell : Shell is a terminal in which we can run our commands, Programs & shell scripts , Shell is gateway between user & kernel.
+Following are the learning from Day - 02 of 90 Days of Devops challenge .
+Linux System Architecture consist of 4 layers 
+layer 1- Hardware : Physical parts of a computer such as CPU, Monitor, Mouse, Keyboard Hard disk.
+layer-2 Kernel : Kernel is a computer program and is the central, core part (Heart) of an operating system (Linux) It manages the operations of the computer and the hardware most notably memory & CPU time.
+layer-3 Shell : Shell is a terminal in which we can run our commands, programs & shell scripts, shell is gateway between user & kernel.
 layer-4 Application: Application is software program that run on our computer .
-Kernel is Developed in C -langauage 
-In order to get information of hardware usagefollowing commands are used linux 
+Kernel is Developed in C -language.
+In order to get information of Hardware usage following commands are used Linux 
 1.top : shows real-time system usage CPU memory and running processes
 2. df-h : disk space usage
 3. free : Memory Usage (RAM)
-In linux file system, Everything starts from /. (Root Directory)
+In Linux file system, everything starts from /. (Root Directory)
 Systemd is the first process starts when a Linux system boots .
 It has PID 1 
-PID is Process ID is a unique number assigned to every running process in linux .
+PID is Process ID is a unique number assigned to every running process in Linux .
 PID can be seen from command ps -ef from the terminal
 When the system is turned on BIOS basic system check happens .
 Then GRUB (GRAND Unified Bootloader)Program loads and manages the booting process basically loads kernel to RAM.
