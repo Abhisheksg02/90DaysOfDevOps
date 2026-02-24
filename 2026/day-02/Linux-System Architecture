@@ -1,0 +1,7 @@
+Following are the learning from Day -02 of 90 Days of Devops .
+Linux System Architeture consist of 4 layers 
+layer 1- hardware : Physical parts of a computer such as CPU Monitor Mouse keyboard hard disk.
+layer-2 Kernel : Kernel is a computer program and is the central core part (heart) of an operating system (linux) It manages the opeations of the computer and the hardware most notably memory & CPU time 
+layer-3 Shell : Shell is a terminal in which we can run our commands, Programs & shell scripts , Shell is gateway between user & kernel.
+layer-4 Application: Application is software program that run on our computer .
+Kernel is Developed in C -langauage 
