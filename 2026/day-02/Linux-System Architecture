@@ -5,3 +5,16 @@ layer-2 Kernel : Kernel is a computer program and is the central core part (hear
 layer-3 Shell : Shell is a terminal in which we can run our commands, Programs & shell scripts , Shell is gateway between user & kernel.
 layer-4 Application: Application is software program that run on our computer .
 Kernel is Developed in C -langauage 
+In order to get information of hardware usagefollowing commands are used linux 
+1.top : shows real-time system usage CPU memory and running processes
+2. df-h : disk space usage
+3. free : Memory Usage (RAM)
+In linux file system, Everything starts from /. (Root Directory)
+Systemd is the first process starts when a Linux system boots .
+It has PID 1 
+PID is Process ID is a unique number assigned to every running process in linux .
+PID can be seen from command ps -ef from the terminal
+When the system is turned on BIOS basic system check happens .
+Then GRUB (GRAND Unified Bootloader)Program loads and manages the booting process basically loads kernel to RAM.
+Then Kernel takes the control of CPU and memeory 
+Then Systemd (PID 1) is started .
