@@ -27,3 +27,9 @@ LOGO=ubuntu-logo
 * cp /etc/hosts /tmp/runbook-demo/hosts-copy && ls -l /tmp/runbook-demo *
 total 4
 -rw-r--r-- 1 aura aura 222 Apr  7 06:01 hosts-copy
+Learnt 
+ Can system create directory?
+ Can system copy file?
+ Can system read/list file?
+
+ls
