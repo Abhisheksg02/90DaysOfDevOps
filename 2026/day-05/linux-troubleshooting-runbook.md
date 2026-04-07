@@ -72,6 +72,51 @@ procs -----------memory---------- ---swap-- -----io---- -system-- -------cpu----
  7  0      0 5304392  57892 2288272    0    0   411    17  504    0  0  0 99  0  0  0
  vmstat shows processes, memory usage, swap activity, disk I/O, system interrupts, and CPU utilization to help identify system performance issues.
 
+ $ ss -tulpn
+Netid          State           Recv-Q          Send-Q                   Local Address:Port                    Peer Address:Port         Process          
+udp            UNCONN          0               0                           127.0.0.54:53                           0.0.0.0:*                             
+udp            UNCONN          0               0                        127.0.0.53%lo:53                           0.0.0.0:*                             
+udp            UNCONN          0               0                              0.0.0.0:5353                         0.0.0.0:*                             
+udp            UNCONN          0               0                              0.0.0.0:54517                        0.0.0.0:*                             
+udp            UNCONN          0               0                                 [::]:46287                           [::]:*                             
+udp            UNCONN          0               0                                 [::]:5353                            [::]:*                             
+tcp            LISTEN          0               4096                         127.0.0.1:43167                        0.0.0.0:*                             
+tcp            LISTEN          0               5                              0.0.0.0:4330                         0.0.0.0:*                             
+tcp            LISTEN          0               4096                         127.0.0.1:631                          0.0.0.0:*                             
+tcp            LISTEN          0               4096                     127.0.0.53%lo:53                           0.0.0.0:*                             
+tcp            LISTEN          0               4096                        127.0.0.54:53                           0.0.0.0:*                             
+tcp            LISTEN          0               511                            0.0.0.0:80                           0.0.0.0:*                             
+tcp            LISTEN          0               5                              0.0.0.0:44321                        0.0.0.0:*                             
+tcp            LISTEN          0               4096                             [::1]:631                             [::]:*                             
+tcp            LISTEN          0               5                                 [::]:4330                            [::]:*                             
+tcp            LISTEN          0               511                               [::]:80                              [::]:*                             
+tcp            LISTEN          0               5                                 [::]:44321                           [::]:*                             
+
+
+$ netstat -tulpn
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:43167         0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:4330            0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:44321           0.0.0.0:*               LISTEN      -                   
+tcp6       0      0 ::1:631                 :::*                    LISTEN      -                   
+tcp6       0      0 :::4330                 :::*                    LISTEN      -                   
+tcp6       0      0 :::80                   :::*                    LISTEN      -                   
+tcp6       0      0 :::44321                :::*                    LISTEN      -                   
+udp        0      0 127.0.0.54:53           0.0.0.0:*                           -                   
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           -                   
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           -                   
+udp        0      0 0.0.0.0:54517           0.0.0.0:*                           -                   
+udp6       0      0 :::46287                :::*                                -                   
+udp6       0      0 :::5353                 :::*                                -                   
+
+
 $ iostat
 Linux 6.17.0-20-generic (aura-VB) 	04/07/2026 	_x86_64_	(4 CPU)
 
