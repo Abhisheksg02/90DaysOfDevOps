@@ -123,3 +123,14 @@ Linux 6.17.0-20-generic (aura-VB) 	04/07/2026 	_x86_64_	(4 CPU)
 avg-cpu:  %user   %nice %system %iowait  %steal   %idle
            0.18    0.00    0.46    0.06    0.00   99.30
 
+$ journalctl -u docker.service -n 10
+Apr 07 19:55:39 aura-VB dockerd[1453]: time="2026-04-07T19:55:39.558623729+05:30" level=warning msg="Error (Unable to complete atomic operation, key mod>
+Apr 07 19:55:39 aura-VB dockerd[1453]: time="2026-04-07T19:55:39.828926220+05:30" level=info msg="Loading containers: done."
+Apr 07 19:55:39 aura-VB dockerd[1453]: time="2026-04-07T19:55:39.944302314+05:30" level=info msg="Docker daemon" commit="28.2.2-0ubuntu1~24.04.1" contai>
+Apr 07 19:55:39 aura-VB dockerd[1453]: time="2026-04-07T19:55:39.945969370+05:30" level=info msg="Initializing buildkit"
+Apr 07 19:55:39 aura-VB dockerd[1453]: time="2026-04-07T19:55:39.951072637+05:30" level=warning msg="CDI setup error /etc/cdi: failed to monitor for cha>
+Apr 07 19:55:39 aura-VB dockerd[1453]: time="2026-04-07T19:55:39.951126092+05:30" level=warning msg="CDI setup error /var/run/cdi: failed to monitor for>
+Apr 07 19:55:39 aura-VB dockerd[1453]: time="2026-04-07T19:55:39.978505619+05:30" level=info msg="Completed buildkit initialization"
+Apr 07 19:55:39 aura-VB dockerd[1453]: time="2026-04-07T19:55:39.993826572+05:30" level=info msg="Daemon has completed initialization"
+Apr 07 19:55:39 aura-VB dockerd[1453]: time="2026-04-07T19:55:39.993947170+05:30" level=info msg="API listen on /run/docker.sock"
+Apr 07 19:55:39 aura-VB systemd[1]: Started docker.service - Docker Application Container Engine.
