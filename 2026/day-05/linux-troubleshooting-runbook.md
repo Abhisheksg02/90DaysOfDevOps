@@ -32,4 +32,8 @@ Learnt
  Can system copy file?
  Can system read/list file?
 
-ls
+/Abhishek/learn_linux/day-05$ ps -o pid
+    PID
+   5653
+  16189
+
