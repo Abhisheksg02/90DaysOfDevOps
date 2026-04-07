@@ -51,3 +51,29 @@ Learnt
     PID COMMAND
       1 systemd
 
+$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           8.3Gi       1.2Gi       5.2Gi        39Mi       2.1Gi       7.0Gi
+Swap:          4.0Gi          0B       4.0Gi
+As a DevOps engineer, focus should be on available memory, not free memory, because cache memory can be reclaimed and used when required.
+
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           846M  1.9M  844M   1% /run
+/dev/sda2        49G   13G   35G  27% /
+tmpfs           4.2G   84K  4.2G   1% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           846M  136K  846M   1% /run/user/1000
+/dev/sr0         52M   52M     0 100% /media/aura/VBox_GAs_7.0.141
+
+$ vmstat
+procs -----------memory---------- ---swap-- -----io---- -system-- -------cpu-------
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st gu
+ 7  0      0 5304392  57892 2288272    0    0   411    17  504    0  0  0 99  0  0  0
+
+$ iostat
+Linux 6.17.0-20-generic (aura-VB) 	04/07/2026 	_x86_64_	(4 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.18    0.00    0.46    0.06    0.00   99.30
+
