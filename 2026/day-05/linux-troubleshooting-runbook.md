@@ -70,6 +70,7 @@ $ vmstat
 procs -----------memory---------- ---swap-- -----io---- -system-- -------cpu-------
  r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st gu
  7  0      0 5304392  57892 2288272    0    0   411    17  504    0  0  0 99  0  0  0
+ vmstat shows processes, memory usage, swap activity, disk I/O, system interrupts, and CPU utilization to help identify system performance issues.
 
 $ iostat
 Linux 6.17.0-20-generic (aura-VB) 	04/07/2026 	_x86_64_	(4 CPU)
