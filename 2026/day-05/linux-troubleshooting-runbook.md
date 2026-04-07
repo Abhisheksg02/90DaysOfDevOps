@@ -37,3 +37,17 @@ Learnt
    5653
   16189
 
+:~/Abhishek/learn_linux/day-05$ ps -o pid,pcpu
+    PID %CPU
+   5653  0.0
+  16196  0.0
+
+~/Abhishek/learn_linux/day-05$ ps -o pid,pmem
+    PID %MEM
+   5653  0.0
+  16199  0.0
+
+/Abhishek/learn_linux/day-05$ ps -o pid,comm -p 1
+    PID COMMAND
+      1 systemd
+
